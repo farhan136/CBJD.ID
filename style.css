@@ -1,0 +1,155 @@
+body{
+    font-family: 'Itim', cursive;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.tugas{
+ margin-top: 200px;
+ animation: shake 1s;
+ animation-iteration-count: infinite;
+ background-color: red;
+ border: 3px solid white;
+ border-radius: 10px;
+ width: 400px;
+ text-align: center; 
+ margin-left: auto;
+ margin-right: auto; 
+}
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  20% { transform: translate(-3px, -3px) rotate(4deg); }
+  40% { transform: translate(0px, 0px) rotate(0deg); }
+  60% { transform: translate(3px, 3px) rotate(-4deg); }
+  80% { transform: translate(0px, 0px) rotate(0deg); }
+}
+.row{
+  margin-top: 50px;
+}
+hr {
+  background-color: white;
+}
+section{
+  margin-top: 350px;
+}
+.card img{
+  width: 200px;
+  margin: auto;
+}
+.card-img-top{
+  transition: .8s;
+  cursor: pointer;
+}
+.card-img-top:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px rgba(185,46,52,.9);
+}
+
+.card {
+  margin-top: 60px;
+}
+.carousel-inner img{
+	height: 600px;
+}
+.footer{
+	height: 50px;
+	width: 100%;
+	margin-top: 200px;
+}
+.modal{
+  color: black;
+}
+h4{
+  margin-top: 100px;
+}
+
+/*logo kontak*/
+.fa-envelope{
+  background-color: red;
+  border-radius: 5%;
+}
+.fa-instagram{
+  background-color: purple;
+  border-radius: 5%;
+}
+.fa-whatsapp{
+  background-color: lightgreen;
+  border-radius: 5%;
+}
+.fa-map-marked-alt{
+  background-color: yellow;
+  border-radius: 5%;
+}
+.landing4 i{
+  transition: .8s;
+}
+.landing4 i:hover{
+  box-shadow: 0px 0px 15px rgba(185,46,52,.9);
+}
+.pesan{
+  margin: auto;
+  width: 500px;
+}
+/*akhir dari logo kontak*/
+
+
+/*galeri*/
+.wrapper{
+  height: 75vh; //satuan vh untuk height, agar responsive
+  display: -webkit-flex;  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+.single-img{
+  flex:1;
+  margin: 0;
+  padding: 0;
+  background-position: center 60% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  transition: all 500ms cubic-bezier(.6, .1, .93, 1);
+}
+.single-img:hover{
+  flex-basis: 65vw;
+  background-position: center 70%;
+  filter: blur(0px);
+}
+/*akhir dari galeri*/
+
+/*link navbar*/
+.nav-link{
+  opacity: .5;
+  transition: .5s;
+}
+.nav-link:hover{
+  opacity: 1;
+}
+/*akhir dari link navbar*/
+
+/*parallax*/
+.landing1, .landing2, .landing3, .landing4{
+  opacity: 0;
+  transition: 1s;
+}
+.jatoh{
+  opacity: 1;
+
+}
+/*akhir dari parallax*/
+
+.tbl{
+  position: fixed;
+  top: 400px;
+  left: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.tbl:hover{
+  transform: scale(1.4);
+  box-shadow: 0px 0px 15px rgba(185,46,52,.9);
+  border-radius: 50%;
+}
+.none{
+  display: none;
+}
